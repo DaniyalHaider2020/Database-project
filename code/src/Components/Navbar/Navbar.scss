@@ -1,0 +1,112 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 50px;
+    position: sticky;
+    border-bottom: 1px solid lightgray; 
+    top: 0;
+    background-color: white;
+    // border-radius: 50px;
+    z-index: 999;
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid lightgray;
+        border-radius: 50px;
+        padding: 5px;
+
+        input {
+          border: none;
+          width: 500px;
+          background-color: transparent;
+          outline: none;
+        }
+
+      }
+      .searchbar
+      {
+        top:45px;
+        left:188px;
+        width:545px;
+        height:100px;
+        position: absolute;
+        background-color: white;
+        border : solid;
+        border-color: lightgrey;
+        border-width: 1px;
+        border-radius: 20px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        ul{
+          list-style: none;
+          li{
+            margin-bottom: 5px;
+            font-size: 17px;
+          }
+
+        };
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .user {
+        display: flex;
+        position: relative;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        span {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          min-width: 100px;
+          .DropDown{
+            top: 25px;
+            cursor: default;
+            display: flex;
+            background-color: white;
+            border : solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 20px;
+            position:absolute;
+            min-width: 120px;
+            height: 100px;
+            justify-content: center;
+            .logout{
+              display:flex;
+              cursor: pointer
+            };
+          }
+        }
+      }
+    }
+}
